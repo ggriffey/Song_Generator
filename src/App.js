@@ -1,12 +1,18 @@
 import "./index.css";
 import Homepage from "./Pages/Homepage";
 
-function App() {
+const App = () => {
+  const handleSearchClick = (searchQuery) => {
+    let data = searchQuery;
+    // makeHTTPRequestToGenius();
+    return data;
+  };
+
   return (
     <div className="App">
-      <Homepage />
+      <Homepage handleSearchClick={handleSearchClick} />
     </div>
   );
-}
+};
 
 export default App;
